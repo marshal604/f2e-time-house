@@ -1,0 +1,22 @@
+' pomodoro strcuture
+@startuml
+node App {
+  package PomodoroModule {
+    component PomodoroComponent {
+      component HomeComponent
+    }
+    component SidebarComponent {
+      component AddTaskComponent
+      component TaskListComponent
+      component MusicListComponent
+    }
+    component TaskReportComponent {
+      component TomatoCountComponent
+      component TomatoChartComponent
+    }
+    component DialogComponent
+  }
+}
+SidebarComponent -> PomodoroComponent: children
+TaskReportComponent -> SidebarComponent: children
+@enduml
