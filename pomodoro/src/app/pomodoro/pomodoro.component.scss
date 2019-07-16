@@ -1,0 +1,29 @@
+:host {
+  display: flex;
+  height: 100%;
+  position: relative;
+
+  * {
+    display: block;
+  }
+}
+
+yur-home {
+  flex: 1;
+  padding-right: var(--side-bar-width);
+}
+
+yur-side-bar {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  yur-side-bar {
+    position: relative;
+    flex: 1;
+  }
+}
