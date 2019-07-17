@@ -1,13 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap');
 
 html,
 body {
   margin: 0;
   height: 100vh;
   font-family: 'Lato', sans-serif;
+  font-weight: 400;
 }
 
 :root {
   --side-bar-width: 40px;
+  --red: #EA5548;
+  --f-light: 300;
+  --f-bold: 700;
+  --f-black: 900;
 }
