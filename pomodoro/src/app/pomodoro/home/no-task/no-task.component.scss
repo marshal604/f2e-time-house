@@ -1,0 +1,59 @@
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.tomato {
+  $w-min: 200px;
+  $w: 50vmin;
+  $w-max: 500px;
+  min-width: $w-min;
+  min-height: $w-min;
+  width: $w;
+  height: $w;
+  max-width: $w-max;
+  max-width: $w-max;
+  border-radius: 50%;
+  background: var(--red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transform: rotate(45deg);
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    background: #316901;
+    min-width: #{$w-min / 6};
+    min-height: #{$w-min / 4};
+    width: #{$w / 6};
+    height: #{$w / 4};
+    max-width: #{$w-max / 6};
+    max-width: #{$w-max / 4};
+    border-radius: 30px;
+    transform: translateY(-50%);
+  }
+
+  .tomato-text {
+    transform: rotate(-45deg);
+    font-size: 24px;
+    font-weight: var(--f-light);
+    color: #FCFCFC;
+  }
+}
+
+.description {
+  font-size: 14px;
+  margin-top: 46px;
+  color: #333333;
+  text-align: center;
+
+  >* {
+    margin: 4px 0;
+  }
+}
